@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">SingleActivityTask</string>
+    <string name="email_n_officialboniface_gmail_com">Email: \n officialboniface@gmail.com</string>
+    <string name="slack_username_n_boniface">Slack Username: \n Boniface</string>
+    <string name="name_n_boniface_akpan">Name: \n Boniface Akpan</string>
+
+    <string name="voyaging">Voyaging</string>
+    <string name="likes">likes:</string>
+    <string name="history">History</string>
+    <string name="sports">Sports</string>
+    <string name="movies">Movies</string>
+
+    <string name="lies">Lies</string>
+    <string name="deceit">Deceit</string>
+    <string name="bully">Bully</string>
+    <string name="intimidations">Intimidations</string>
+    <string name="dislikes">Dislikes:</string>
+    <string name="reading">Reading</string>
+    <string name="singing">Singing</string>
+    <string name="gaming">Gaming</string>
+    <string name="coding">Coding</string>
+    <string name="hobbies">Hobbies:</string>
+
+
+</resources>

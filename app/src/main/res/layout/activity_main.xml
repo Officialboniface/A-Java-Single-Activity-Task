@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/Naija_flag"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/flag"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/Fourist"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_local_florist"
+        app:layout_constraintLeft_toRightOf="@id/Naija_flag"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+
+    <ImageView
+        android:id="@+id/Sunny"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_wb_sunny"
+        app:layout_constraintLeft_toRightOf="@id/Fourist"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Widget"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/image"
+        app:layout_constraintLeft_toRightOf="@id/Sunny"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+
+    <View
+        android:id="@+id/Divider_Id"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Naija_flag" />
+
+    <TextView
+        android:id="@+id/NameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_orange"
+        android:gravity="center_horizontal"
+        android:text="@string/name_n_boniface_akpan"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Divider_Id" />
+
+    <TextView
+        android:id="@+id/SlackTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_orange"
+        android:gravity="center_horizontal"
+        android:text="@string/slack_username_n_boniface"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/NameTv" />
+
+    <TextView
+        android:id="@+id/EmailTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_orange"
+        android:gravity="center_horizontal"
+        android:text="@string/email_n_officialboniface_gmail_com"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SlackTv" />
+
+
+    <View
+        android:id="@+id/Divider2_Id"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EmailTv" />
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalSv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/Divider2_Id"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            tools:ignore="ScrollViewSize">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_trns"
+                android:shadowColor="@android:color/transparent"
+                android:text="@string/likes"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                style="?android:buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_trns"
+                android:text="@string/voyaging"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                style="?android:buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_trns"
+                android:text="@string/history"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                style="?android:buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_trns"
+                android:text="@string/sports"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                style="?android:buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_trns"
+                android:text="@string/movies"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/Divider3_Id"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/HorizontalSv" />
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalSv2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/Divider3_Id"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            tools:ignore="ScrollViewSize">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_red"
+                android:shadowColor="@android:color/transparent"
+                android:text="@string/dislikes"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                style="?android:buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_red"
+                android:text="@string/lies"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                style="?android:buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_red"
+                android:text="@string/deceit"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                style="?android:buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_red"
+                android:text="@string/bully"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                style="?android:buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_red"
+                android:text="@string/intimidations"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/Divider4_Id"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/HorizontalSv2" />
+
+    <HorizontalScrollView
+        android:id="@+id/HorizontalSv3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/Divider4_Id"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            tools:ignore="ScrollViewSize">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_orange"
+                android:shadowColor="@android:color/transparent"
+                android:text="@string/hobbies"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+
+            <Button
+                style="?android:buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_orange"
+                android:text="@string/reading"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                style="?android:buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_orange"
+                android:text="@string/singing"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+
+                style="?android:buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_orange"
+                android:text="@string/gaming"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/CButton"
+                style="?android:buttonBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/bg_orange"
+                android:text="@string/coding"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/Divider5_Id"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/HorizontalSv3" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Toy1"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/toy1"
+        app:civ_border_color="@android:color/holo_orange_dark"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Divider5_Id" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Toy2"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/toy2"
+        app:civ_border_color="@android:color/holo_orange_dark"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/Toy1"
+        app:layout_constraintTop_toBottomOf="@id/Divider5_Id" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Toy3"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/toy3"
+        app:civ_border_color="@android:color/holo_orange_dark"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintLeft_toRightOf="@id/Toy2"
+        app:layout_constraintTop_toBottomOf="@id/Divider5_Id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
